@@ -5,14 +5,14 @@ class ATM:
         self.balance=balance
 
     def check_balance(self):
-        print("Current Balance:",self.balance)
+        print("\nCurrent Balance:",self.balance)
 
     def deposit(self):
         amount=float(input("Enter Amount:"))
         if amount > 0:
             self.balance+=amount
             print("Deposited Amount:",amount)
-            print("New Balance:",self.balance)
+            print("\nNew Balance:",self.balance)
         else:
             print("Invaild amount...")
     
@@ -25,7 +25,7 @@ class ATM:
         else:
             self.balance-=amount
             print("Withdrawal Amount:",amount)
-            print("New Balance",self.balance)
+            print("\nNew Balance",self.balance)
 #-------Main Program--------
 PIN=input("Enter PIN:")
 
@@ -33,14 +33,14 @@ atm =ATM(10000)
  
 while True:
     if PIN == "Janvi":
-        print("what you want to do:")
+        print("\nwhat you want to do:")
         print("1.Check Balance")
         print("2.deposit Money")
         print("3.Withdraw Money")
         print("4. Exit")
     else:
         print("Wrong PIN...Please try again")
-    choice = input("Enter you choice 1,2,3,4:")
+    choice = input("\nEnter you choice 1,2,3,4:")
 
 
     if choice == "1":
